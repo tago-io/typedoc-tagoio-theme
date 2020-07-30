@@ -1,5 +1,5 @@
 
-<footer{{#unless settings.hideGenerator}} class="with-border-bottom"{{/unless}}>
+<div class="tsd-footer" {{#unless settings.hideGenerator}} class="with-border-bottom"{{/unless}}>
     <div class="container">
         <h2>Legend</h2>
         <div class="tsd-legend-group">
@@ -12,10 +12,184 @@
             {{/each}}
         </div>
     </div>
-</footer>
+</div>
 
-{{#unless settings.hideGenerator}}
-    <div class="container tsd-generator">
-        <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-    </div>
-{{/unless}}
+<style>
+    .tago-footer {
+    padding: 1rem;
+    background-color: #121b23;
+    }
+
+    .tago-highlight.hero-cta p,
+    .tago-footer p,
+    .tago-footer h1,
+    .tago-footer h2 {
+    color: #FFF;
+    }
+
+    .tago-footer .table {
+    background-color: transparent;
+    color: #FFF;
+    }
+
+    .tago-footer .table tr:hover {
+    background-color: transparent;
+    }
+
+    .tago-footer .table td {
+    border: none;
+    }
+
+    .tago-footer .table tr > td {
+    padding-left: 0px;
+    }
+
+    .tago-footer .table tr > td:nth-child(2) {
+    padding-left: 1.5em;
+    }
+
+    .tago-footer h2.subtitle {
+    margin-top: 10px;
+    }
+
+    .tago-footer a {
+    color: #88bfef;
+    }
+
+    .tago-footer img {
+    padding-left: 5px;
+    }
+
+    .tago-footer a:hover {
+    color: #fff;
+    }
+
+    .tago-footer .is-half {
+    padding-top: 0;
+    }
+
+    .tago-footer .tago-reserved {
+    font-size: 0.78em;
+    }
+
+    .tago-highlight.hero-cta .title .button {
+    margin-top: 10px;
+    }
+
+    .tago-highlight.hero-cta {
+    padding: 1rem;
+    -webkit-box-shadow: 0 1px 0 rgba(5, 5, 5, 0.2);
+    box-shadow: 1px 0 1px rgba(5, 5, 5, 0.2);
+    background: none;
+    background-color: #337ab7;
+    }
+
+    a:hover i.fa::before {
+    color: #fff !important;
+    }
+
+    .tago-social-icons i {
+    color: #337ab7 !important;
+    font-size: 2rem !important;
+    }
+
+    .tago-amazon-logo {
+    width: 140px;
+    margin-right: 5px;
+    }
+
+    .tago-amazon-logo-div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    }
+</style>
+<div class="tago-footer">
+   <div class="container">
+      <div class="columns">
+         <div class="column is-one-third is-hidden-mobile">
+            <h1 class="title">About us</h1>
+            <p class="is-small">
+               TagoIO offers an end-to-end IoT cloud platform that transforms 
+               the way businesses create value from connected products and 
+               user interactions.
+            </p>
+            <br>
+            <div class="tago-social-icons">
+               <div class="columns is-mobile">
+                  <div class="column is-2">
+                     <a target="_blank" rel="noopener noreferrer" href="https://tago.io/blog">
+                     <i class="fas fa-newspaper icon-block"></i><span class="visually-hidden">Blog</span></a>
+                  </div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/tagoio"><i class="fab fa-twitter icon-block"></i><span class="visually-hidden">Twitter</span></a></div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tago.io/"><i class="fab fa-facebook icon-block"></i><span class="visually-hidden">Facebook</span></a></div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/tago.io"><i class="fab fa-linkedin icon-block"></i><span class="visually-hidden">LinkedIn</span></a></div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://github.com/tago-io"><i class="fab fa-github icon-block"></i><span class="visually-hidden">Github</span></a></div>
+               </div>
+            </div>
+         </div>
+         <div class="column is-one-third">
+            <h1 class="title">Contact us</h1>
+            <div class="is-small">
+               <p>Tago LLC</p>
+               <p>
+                  <!-- -->1017 Main Campus Drive, Suite 2300<br>Raleigh, NC 27606 - USA
+               </p>
+               <br>
+               <p>
+                  Phone:<!-- --> <a href="tel:8006077410">(800) 607-7410</a><br>
+               </p>
+            </div>
+         </div>
+         <div class="column is-one-third is-hidden-mobile">
+            <h1 class="title">Our links</h1>
+            <table class="table">
+               <tbody>
+                  <tr>
+                     <td><a href="/terms-of-support">Terms of Support</a></td>
+                     <td><a href="http://docs.tago.io" target="_blank" rel="noopener noreferrer">Documentation</a></td>
+                  </tr>
+                  <tr>
+                     <td><a href="/privacy">Privacy</a></td>
+                     <td><a href="/faq">FAQ</a></td>
+                  </tr>
+                  <tr>
+                     <td><a href="https://github.com/tago-io" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+                     <td><a href="https://tago.io/blog/" target="_blank" rel="noopener noreferrer">Blog</a></td>
+                  </tr>
+                  <tr>
+                     <td><a href="http://docs.tago.io/en/categories/13-api" target="_blank" rel="noopener noreferrer">API</a></td>
+                     <td><a href="https://community.tago.io/" target="_blank" rel="noopener noreferrer">Community</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class="columns is-mobile is-hidden-tablet">
+         <div class="column is-offset-2">
+            <div class="tago-social-icons">
+               <div class="columns is-mobile">
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://tago.io/blog"><i class="fas fa-newspaper icon-block"></i><span class="visually-hidden">Blog</span></a></div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/tagoio"><i class="fab fa-twitter icon-block"></i><span class="visually-hidden">Twitter</span></a></div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tago.io/"><i class="fab fa-facebook icon-block"></i><span class="visually-hidden">Facebook</span></a></div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/tago.io"><i class="fab fa-linkedin icon-block"></i><span class="visually-hidden">LinkedIn</span></a></div>
+                  <div class="column is-2"><a target="_blank" rel="noopener noreferrer" href="https://github.com/tago-io"><i class="fab fa-github icon-block"></i><span class="visually-hidden">Github</span></a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="columns">
+         <div class="column is-half is-offset-one-quarter">
+            <div class="has-text-centered">
+               <a href="https://play.google.com/store/apps/details?id=center.io.tago.admin&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img class=" lazyloaded" data-src="{{relativeURL "assets/tago/images/GooglePlay.svg"}}" alt="Play Store" src="{{relativeURL "assets/tago/images/GooglePlay.svg"}}"></a><a href="https://itunes.apple.com/app/tago.io-iot-center/id1067391139"><img class=" lazyloaded" data-src="{{relativeURL "assets/tago/images/Apple.svg"}}" alt="Apple Store" src="{{relativeURL "assets/tago/images/Apple.svg"}}"></a>
+               <div class="tago-amazon-logo-div"><img class="tago-amazon-logo" src="{{relativeURL "assets/tago/images/amazon.svg"}}" alt="Amazon Logo"></div>
+               <p class="tago-reserved">
+                  ©<!-- --> 2014-<!-- -->2020<!-- --> <!-- --> - TAGO LLC. ALL RIGHTS RESERVED<!-- -->.
+               </p>
+               <p class="tago-reserved">
+                   This was generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a>.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

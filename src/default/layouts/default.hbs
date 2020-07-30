@@ -3,13 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="{{relativeURL "assets/images/favicon-32x32.png"}}"/>
     <title>{{#ifCond model.name '==' project.name}}{{project.name}}{{else}}{{model.name}} | {{project.name}}{{/ifCond}}</title>
     <meta name="description" content="Documentation for {{project.name}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="{{relativeURL "assets/tago/bulma.css"}}">
     <link rel="stylesheet" href="{{relativeURL "assets/css/main.css"}}">
+    
 </head>
-<body>
+<body
+    style='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
+>
 
 {{> header}}
 
@@ -44,6 +48,8 @@
 <script src="{{relativeURL "assets/js/main.js"}}"></script>
 
 {{> analytics}}
-
+<link rel="stylesheet" href="{{relativeURL "assets/tago/fa/css/fontawesome.min.css"}}" async="">
+<link rel="stylesheet" href="{{relativeURL "assets/tago/fa/css/brands.min.css"}}" async="">
+<link rel="stylesheet" href="{{relativeURL "assets/tago/fa/css/solid.min.css"}}" async="">
 </body>
 </html>

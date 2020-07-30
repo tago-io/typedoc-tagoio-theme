@@ -25,6 +25,10 @@
     a
         color: $TOOLBAR_TEXT_COLOR
         text-decoration: none
+        display: flex
+        align-items: center
+        height: 100%
+        width: 100.5px
 
         &.title
             font-weight: bold
@@ -41,7 +45,7 @@
         display: table-cell
         position: relative
         white-space: nowrap
-        line-height: $TOOLBAR_HEIGHT
+        max-height: $TOOLBAR_HEIGHT
 
         &:first-child
             width: 100%
