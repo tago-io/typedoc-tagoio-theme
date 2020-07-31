@@ -3,10 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/png" href="{{relativeURL "assets/images/favicon-32x32.png"}}"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{relativeURL "assets/images/apple-touch-icon.png"}}">
+    <link rel="icon" sizes="32x32" href="{{relativeURL "assets/images/favicon-32x32.png"}}"/>
+    <link rel="icon" sizes="16x16" href="{{relativeURL "assets/images/favicon-16x16.png"}}"/>
     <title>{{#ifCond model.name '==' project.name}}{{project.name}}{{else}}{{model.name}} | {{project.name}}{{/ifCond}}</title>
     <meta name="description" content="Documentation for {{project.name}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="og:image" content="{{relativeURL "assets/images/og_icon.png"}}">
+    <meta name="og:title" content="TagoIO">
+    <link rel="shortcut icon" href="{{relativeURL "assets/images/favicon.ico"}}">
+    <meta name="og:type" content="website">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <link rel="mask-icon" href="{{relativeURL "assets/images/safari-pinned-tab.svg"}}">
+    <meta name="theme-color" content="#337ab7">
+    <meta name="author" content="TagoIO">
     <link rel="stylesheet" href="{{relativeURL "assets/tago/bulma.css"}}">
     <link rel="stylesheet" href="{{relativeURL "assets/css/main.css"}}">
     

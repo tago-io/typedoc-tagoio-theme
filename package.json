@@ -1,5 +1,5 @@
 {
-  "name": "typedoc-tagoio-theme",
+  "name": "@tago-io/typedoc-tagoio-theme",
   "description": "Default themes for TagoIO.",
   "version": "0.10.2",
   "homepage": "https://tago.io/",
@@ -14,7 +14,7 @@
     "build": "npm run clean && npm run grunt",
     "prepublish": "npm run build"
   },
-  "repository":"tago-io/typedoc-tagoio-theme",
+  "repository": "tago-io/typedoc-tagoio-theme",
   "license": "Apache-2.0",
   "engines": {
     "node": ">= 8"
